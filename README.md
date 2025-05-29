@@ -9,6 +9,7 @@ The game is structured as five core subsystems, each implemented as a separate V
 
 1. 🕹️ Input Processing
    Each player uses four dedicated push-buttons (up, down, left, right), connected via GPIO pins. Dual-stage synchronizers and robust debouncing circuits filter out noise and ensure accurate hit detection. The debouncing implementation begins with a dual-flip-flop synchronizer to prevent metastability, followed by a 20ms stability counter implemented as a 500,000 cycle counter at 50MHz. The counter only increments when input remains stable and resets on any transition, with separate counters maintained for each button to ensure independent processing. Debounced states are mirrored on onboard LEDs for both players.
+   ![Pushbuttons](https://github.com/user-attachments/assets/1ac4781a-c991-48f7-b4eb-6479be1f5edc)
 
 2. ⬆️ Arrow Generation and Timing
    Pseudo-random pattern generators launch arrows at precise intervals, moving them smoothly toward the target zone. Dedicated timing logic ensures all arrow movement and event checking are precisely synchronized.
