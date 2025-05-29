@@ -9,7 +9,7 @@ The game is structured as five core subsystems, each implemented as a separate V
 
 1. 🕹️ Input Processing
    Each player uses four dedicated push-buttons (up, down, left, right), connected via GPIO pins. Dual-stage synchronizers and robust debouncing circuits filter out noise and ensure accurate hit detection. The debouncing implementation begins with a dual-flip-flop synchronizer to prevent metastability, followed by a 20ms stability counter implemented as a 500,000 cycle counter at 50MHz. The counter only increments when input remains stable and resets on any transition, with separate counters maintained for each button to ensure independent processing. Debounced states are mirrored on onboard LEDs for both players.
-   ![Pushbuttons](https://github.com/user-attachments/assets/1ac4781a-c991-48f7-b4eb-6479be1f5edc)
+   <img src="https://github.com/user-attachments/assets/1ac4781a-c991-48f7-b4eb-6479be1f5edc" alt="Pushbuttons" width="500"/>
 
 2. ⬆️ Arrow Generation and Timing
    Pseudo-random pattern generators launch arrows at precise intervals, moving them smoothly toward the target zone. Dedicated timing logic ensures all arrow movement and event checking are precisely synchronized.
@@ -23,6 +23,7 @@ The game is structured as five core subsystems, each implemented as a separate V
 5. 🎶 Audio Output (Music and Effects)
    The audio system generates fully synthesized game music at 90 BPM using an A minor pentatonic scale with real-time sound effect integration and multi-channel mixing. The frequency values for each note have been carefully calculated to ensure perfect pitch.
 
+Watch the Demo below!
 [![Watch the demo](https://github.com/user-attachments/assets/2cb2ca87-02c3-4d75-bc42-774e0cdba3b0)](https://youtu.be/lD32fzIGciU?feature=shared)
 
 # Academic Integrity Notice
