@@ -23,7 +23,7 @@ The game is structured as five core subsystems, each implemented as a separate V
 5. 🎶 Audio Output (Music and Effects)
    The audio system generates fully synthesized game music at 90 BPM using an A minor pentatonic scale with real-time sound effect integration and multi-channel mixing. The frequency values for each note have been carefully calculated to ensure perfect pitch.
 
-Watch the Demo below!
+## Watch the Demo below!
 [![Watch the demo](https://github.com/user-attachments/assets/2cb2ca87-02c3-4d75-bc42-774e0cdba3b0)](https://youtu.be/lD32fzIGciU?feature=shared)
 
 # Academic Integrity Notice
