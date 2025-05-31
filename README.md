@@ -1,6 +1,6 @@
 # Mini Dance Dance Revolution 
 
-This project is a two-player, hardware recreation of the classic Dance Dance Revolution (DDR) arcade game, built entirely in Verilog HDL on a DE1-SoC FPGA. This project blends digital design, real-time input handling, VGA graphics, synthesized audio, and system-level integration on custom logic.
+This project is a two-player, hardware recreation of the classic Dance Dance Revolution (DDR) arcade game, built entirely in Verilog HDL on a DE1-SoC FPGA board. This project blends digital design, real-time input handling, VGA graphics, synthesized audio, and system-level integration on custom logic.
 
 ## 🎮 Game Overview
 Mini DDR reimagines the arcade experience: arrows scroll up a split VGA display, and two players compete to match their button presses to the on-screen prompts. The FPGA processes physical inputs in real time, evaluates player accuracy with cycle-level precision, and updates scores instantly, all while delivering synchronized music and visual feedback.
